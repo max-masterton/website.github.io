@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="google-site-verification" content="tm5Y6ZNTf-lBqbwniGjQPv1q02o2TuUQZ9GTYa4SMLg" />
+  <title>Craig Frayne — Writing</title>
+  <link rel="shortcut icon" type="image/jpg" href="..\images\fedalon_logo.png"/>
+
+
+  <meta name="description"
+    content="A minimal, almost class-less CSS library to write modern websites that look like LaTeX documents." />
+  <meta name="keywords" content="latex.css,css library,class-less css,latex css" />
+  <meta property="og:title" content="LaTeX.css" />
+  <meta property="og:url" content="https://latex.now.sh" />
+  <meta property="og:description"
+    content="A minimal, almost class-less CSS library to write modern websites that look like LaTeX documents." />
+  <meta property="og:type" content="website" />
+
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="../styles/custom.css" />
+  <link rel="stylesheet" href="../prism/prism.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+
+<body id="top">
+
+  <div class="topnav">
+    <!-- <img src="images\fedalon_logo.png" width="70px" height="70px"> -->
+    <a class="active" href="../"><img src="..\images\fedalon_logo.png" width="60px" height="60px"></a>    
+</div>    
+
+  <header>
+    <h1>Corpus-based analysis of genetically modified seed discourse</h1>
+    <p class="author">
+      Craig Frayne <br />
+      June 2021
+    </p>
+
+    
+  </header>
+  <figure>
+    <img src="seed_banner.png"
+      loading="lazy" alt="Leaf with water drops" width="600" height="400" />
+  </figure>
+
+  <nav role="navigation" class="toc">
+    <ol>
+      <li><a href="#summary">Summary</a></li>
+      <li>
+        <a href="#conclusions">Findings</a></li>
+        <li>
+          <a href="#full">Full Paper</a></li>
+    </ol>
+  </nav>
+
+  <p>
+    If you prefer a darker typeface you can change it here:
+  <button id="typeface-toggle">Typeface: <span id="typeface">Latin Modern</span></button> 
+ </p>
+ <main>
+    <h2 id="summary">Summary</h2>
+
+    <p>
+      While ecolinguistics studies interactions between language and the natural world, the theme of genetic modification highlights challenges in developing frameworks for the analysis of ecological discourses. Given the ability of humans to alter life at the molecular level, one could argue that frameworks of anti-essentialism and discursive constructivism have expanded from the cultural and social realms (the traditional focus of discourse analysis) to encompass the natural world. This paper uses multilevel analysis to draw out various dimensions of debates related to genetically modified (GM) seed. Analysis is applied to a web-based corpus using both computational, quantitative methods as well as qualitative critical and interpretive approaches. Keyword analysis, concordance lines, and collocation are used to explore whether sides of the debate are reflected in the semantic structure of the text. Implicature and conceptual blending point to differences at the cognitive level. The analyses give data-based evidence for differing epistemologies, worldviews, and situated contexts that may underlie misunderstandings. Results suggest the multilevel methodology can be an effective way to integrate ecological context into discourse analyses.
+      </p>
+
+      <h2 id="conclusions">Findings</h2>
+
+      <p>By splitting the corpus into two distinct subcorpora, it was possible to gain insights into sources of misunderstanding and disagreement between side of the debate. The following is a summary of findings:</p>
+      <ul>
+        <li><p>Pro-GM discourse is significantly more likely to come from corporate or for-profit
+        entities, while the anti-GM discourse is more likely to originate from non-profit or
+        advocacy organizations.</p></li>
+        <li><p>Anti-GM discourse contained culturally significant key words and key phrases while
+        those in the pro-GM discourse were more technical and specialized.</p></li>
+        <li><p>Concordance analysis also suggested culture was a far more prominent factor in
+        the anti-GM discourse.</p></li>
+        <li><p>Anti-GM discourse was more likely to view natural systems holistically whereas
+        the pro-GM discourse took a more analytic and reductionist approach.</p></li>
+        <li><p>The countries mentioned in the corpus were more distributed in the anti-GM
+        subcorpus.</p></li>
+        <li><p>Based on years and decades mentioned, the temporal span in the anti-GM corpus
+        was larger.</p></li>
+        <li><p>Concordances of income suggested the economic context in the subcorpora is
+        different, with the anti-subcorpus focused more on economic scarcity and household
+        income as opposed to the term farm income in the pro-subcorpus.</p></li>
+        <li><p>Based on collocates of corporate, the anti-GM discourse is more critical of
+        socio-economic structures.</p></li>
+        <li><p>Analysis of the country data suggests that lower income countries are more
+        represented in the anti-GM corpus.</p></li>
+        <li><p>Analysis of implications suggested the pro-GM corpus explained relationships in
+        more quantifiable variables, whereas the anti-subcorpus contained more qualitative,
+        subjective, and even unquantifiable relationships.</p></li>
+        <li><p>Interdiscursivity, conceptual blending, and situated context all seems to be
+        markedly different between the two subcorpora.</p></li>
+        </ul>
+  
+ 
+ 
+      <h2 id="full">Full Paper</h2>
+
+      <p>The <a href="https://journals.sagepub.com/doi/abs/10.1177/09579265211023234?journalCode=dasa" target="_blank">full paper</a> is published in <i>Discourse & Society</i>. For copywrite reasons I cannot post a copy here, but please contact me for a pdf version.</p>
+   
+  </main>
+
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'],],
+      },
+    }
+    const toggle = document.getElementById('typeface-toggle')
+    const typeface = document.getElementById('typeface')
+    toggle.addEventListener('click', () => {
+      document.body.classList.toggle('libertinus')
+      typeface.textContent = document.body.classList.contains('libertinus') ? 'Libertinus' : 'Latin Modern'
+    })
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script async src="prism/prism.js"></script>
+
+  <script async defer data-domain="latex.now.sh" src="https://plausible.io/js/plausible.js"></script>
+</body>
+
+</html>

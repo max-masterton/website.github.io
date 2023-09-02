@@ -1,5 +1,356 @@
-<html>
-<body>
-hi
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="google-site-verification" content="tm5Y6ZNTf-lBqbwniGjQPv1q02o2TuUQZ9GTYa4SMLg" />
+    <title>Craig Frayne — palabra.ca</title>
+    <link rel="shortcut icon" type="image/jpg" href="images\fedalon_logo.png" />
+
+    <meta name="description" content="Personal website, portfolio, and writing." />
+    <meta name="keywords" content="latex.css,css library,class-less css,latex css" />
+    <meta property="og:title" content="Craig Frayne — palabra.ca" />
+    <meta property="og:url" content="http://www.craigfrayne.com/" />
+    <meta property="og:type" content="website" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="prism/prism.css" />
+    <link rel="stylesheet" href="styles/custom.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+
+
+<body id="top">
+
+
+    <div class="topnav" id="topmenu">
+        <!-- <img src="images\fedalon_logo.png" width="70px" height="70px"> -->
+        <a class="active" href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#consulting">Services</a>
+        <a href="#design">Portfolio</a>
+        <a href="#writing">Writing</a>
+    </div>
+
+    <header>
+        <h1>Palabra<span class="dotg">.</span></h1>
+        <p class="author">
+            Craig Frayne <br /> December 2021
+        </p>
+    </header>
+
+    <div class="abstract" id="about">
+        <h2>About</h2>
+        <p>
+            My name is Craig Frayne. I'm a writer and digital designer based in Ontatio, Canada. This website is in <span class="latex">L<span>a</span>T<span>e</span>X</span>.css. If you prefer a darker typeface you can change it here:
+            <button id="typeface-toggle">Typeface: <span id="typeface">Latin Modern</span></button>
+        </p>
+        <br>
+        <p>
+            You can connect with me on <a href="https://www.linkedin.com/in/craigfrayne/" target="_blank"><i class="fab fa-linkedin"></i> Linkedin</a> or <a href="https://github.com/craigmateo" target="_blank"><i class="fab fa-github"></i> GitHub</a>.
+        </p>
+    </div>
+    <p><span class="expand-photo" onclick="changeImage()"><i class="fas fa-expand"></i> Profile photo </span>
+        <figure>
+            <img id="imgClickAndChange" src="images/person-icon.png" loading="lazy" alt="Craig Frayne photo" style="margin: auto;width:10%;" />
+        </figure>
+    </p>
+
+    <main>
+        <article>
+            <h2 id="experience">Experience</h2>
+
+            <p>Over my career, I've worked with research consultancies, local and international non-profits, and software startups.</p>
+
+            <p>Currently, I am doing full stack web development, visualization, and interaction design with a focus on e-learning. I am also doing independent research on applications of hyperspectral remote sensing.</p>
+
+            <p>My aim is to contribute to hands-on projects that are original and add value.</p>
+
+            <br>
+            <a href="files\CV_Craig_Frayne.pdf" target="_blank"><i class="fas fa-file-pdf"></i> CV </a>
+
+
+            <h4>Freelance / Contract</h4>
+            <img class="fas" src="images\fedalon_logo.png" width="50px" height="50px">
+            <div> <span class="dot">Palabra Technical</span> <span class="years">2010-Present</span>
+                <ul>
+                    <li>Front end web design, JavaScript programming, graphic design, technical writing, ux writing, translation, digital media</li>
+                    <li>Research, project design, and delivery for non-profits and SMEs</li>
+                </ul>
+                <h4>Recent Roles</h4>
+
+                <div>API Technical Writer at <a href="https://corporate.aboutyou.de/en/" target="_blank">About You SE & Co.</a><span class="years">Current</span>
+                    <span class="location">Hamburg, Germany</span>
+                </div>
+
+                <div>Project Manager at <a href="https://www.digitaled.com/" target="_blank">DigitalEd</a><span class="years">2018-2020</span>
+                    <span class="location">Waterloo, Ontario</span>
+                </div>
+                <div>Data Analyst at <a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-montreal/" target="_blank">Microsoft Research </a> <span class="sidenote">Maluuba acqusition in Feb. 2017.</span><span class="years">2016-2018</span>
+                    <span class="location">Montreal, Quebec</span>
+                </div>
+
+                <h4>Education</h4>
+                <div>PhD at <a href="https://tu-freiberg.de/en" target="_blank">TU Bergakademie Freiberg</a>
+                    <span class="location">Saxony, Germany</span>
+                    <a href="https://tubaf.qucosa.de/landing-page/?tx_dlf[id]=https%3A%2F%2Ftubaf.qucosa.de%2Fapi%2Fqucosa%253A74856%2Fmets" target="_blank"><i class="fas fa-external-link-alt"></i> Dissertation</a>
+                </div>
+
+                <br>
+                <a class="jump" href="#topmenu" title="Jump back to main menu.">↩</a>
+
+                <h2 id="consulting">Services</h2>
+
+                <table>
+                    <caption>What I do.</caption>
+                    <thead>
+                        <tr>
+                            <th class="icon"><i class="fas fa-comments icon"></i> <br>Technical Communication</th>
+                            <th class="icon"><i class="fas fa-code icon"></i> <br>Programming & Data</th>
+                            <th class="icon"><i class="fas fa-tasks icon"></i> <br>Project Management & Consulting</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <ul class="table-list">
+                                    <li>Reports</li>
+                                    <li>Articles</li>
+                                    <li>Peer Reviewed Research</li>
+                                    <li>Digital Publishing</li>
+                                    <li>UX Writing</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul class="table-list">
+                                    <li>Python</li>
+                                    <li>JavaScript</li>
+                                    <li>Full Stack</li>
+                                    <li>Visualization</li>
+                                    <li>Data Analysis</li>
+                                    <li>GIS</li>
+                                </ul>
+
+                            </td>
+                            <td>
+                                <ul class="table-list">
+                                    <li>PMBOK</li>
+                                    <li>Project Development</li>
+                                    <li>Reporting</li>
+                                    <li>Agile</li>
+                                    <li>Tools & Processes</li>
+                                    <li>Stakeholder Engagement</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <br>
+                <a class="jump" href="#topmenu" title="Jump back to main menu.">↩</a>
+
+
+                <h2 id="design">Portfolio</h2>
+                <i class="fas fa-wrench"></i> <i>I'm currently updating my online portfolio. Please contact me for work samples, including:</i><br><br>
+
+                <div class="tabs">
+                    <button class="tablinks" onclick="openSlides('far fa-object-group', 'docs.google.com/presentation/d/e/2PACX-1vTe-8f8c7dR_lVVCj38b1EA5Pw8WlHAvSdKZkzHiBmZ1CrD0uFVyDauW0VvP2c_FFIFfpSUuCcTKo4r/embed?start=false','Web Development')"><i class="fa fa-code"></i> Web Development</button>
+                    <button class="tablinks" onclick="openSlides('fas fa-crop-alt', 'docs.google.com/presentation/d/e/2PACX-1vTfFkBmDgjVW8xZ1z-cWytrI88I1CSUGv20lZv9HOjpYYhT0vKrt-2O1PrMIHt7gMxw6L0Dvi-dIyxn/embed?start=false','Interaction Design')"><i class="fas fa-crop-alt"></i> Interaction Design</button>
+                    <button class="tablinks" onclick="openSlides('fas fa-paint-brush', 'docs.google.com/presentation/d/e/2PACX-1vTv1TEMFzSiVHYN5urquutnTJSVnoT_U6RntHKX5n9I46DFeqDK-sltjXBew00rQ80dxCoYUL3TEbMm/embed?start=false','Graphic Design')"><i class="fas fa-paint-brush"></i> Graphic Design</button>
+                    <button class="tablinks" onclick="openSlides('far fa-chart-bar', 'docs.google.com/presentation/d/e/2PACX-1vTgejOExb6LU6hObju0xXFsBhVQGPqrPbhEgLakGgAnvTKlZ6x32G5ISQvk8m1ZaHrdkDdx-PPIXdIu/embed?start=false','Data')"><i class="far fa-chart-bar"></i> Data</button>
+                </div>
+                <div class="tabs">
+                    <button class="tablinks" onclick="openSlides('fas fa-globe-americas', 'docs.google.com/presentation/d/e/2PACX-1vQiju_3iZB2JdyQ8UH-ocslLMPKqimTuNZEB_wcGQE4vpTQDqBEHpBpe_NLbr6-hp6SlfhAE_3sVBeO/embed?start=false','Geomatics')"><i class="fas fa-globe-americas"></i> Geomatics</button>
+                    <button class="tablinks" onclick="openSlides('fas fa-drafting-compass', 'docs.google.com/presentation/d/e/2PACX-1vRL6y2K-rI-MaO22FaOx6a_8ksbK0VVa-hwTvlnliS7fuWP5Ku2ova1Fth9MiaqvFjaoMIjphfRk6lW/embed?start=false','Technical Drawing')"><i class="fas fa-drafting-compass"></i> Technical Drawing</button>
+                    <button class="tablinks" onclick="openSlides('fas fa-quote-right', 'docs.google.com/presentation/d/e/2PACX-1vRL6y2K-rI-MaO22FaOx6a_8ksbK0VVa-hwTvlnliS7fuWP5Ku2ova1Fth9MiaqvFjaoMIjphfRk6lW/embed?start=false','Technical Writing')"><i class="fas fa-quote-right"></i> Technical Writing</button>
+                </div>
+
+                <span class="expand-pres" id="collapse" onclick="collapse()" style="display: none;margin-top: 1rem;"><i class="fas fa-expand"></i> Collapse</span>
+
+
+                <h4 id="port-head" style="display: none;"><i id="port-icon" class=""></i><span id="port-head2"></span></h4>
+                <div id="port-canvas" style="display: none;" class="responsive-google-slides">
+                    <iframe id="slideframe" src="https://" style="height:98%;background-color: aliceblue;cursor: pointer;border:none;" frameborder="0" width="100%" height="105%" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+                </div>
+
+
+                <h4 id="design">Tools I use</h4>
+                <b><i>Digital world</i></b><br>
+                <span><i class="fab fa-python"></i> Python</span> | <span><i class="fab fa-js"></i> JavaScript</span> | <span><i class="fas fa-file-pdf"></i> Adobe CS</span> | <span><i class="fab fa-r-project"></i> R</span> | <span><i class="fas fa-globe-africa"></i> QGIS & ArcGIS</span>                | <span><i class="fab fa-php"></i> PHP</span> <br>
+                <span><i class="fas fa-square-root-alt"></i> LaTeX</span> | <span><i class="fas fa-database"></i> SQL</span> | <span><i class="fab fa-html5"></i> HTML5</span> | <span><i class="fab fa-css3-alt"></i> CSS</span> | <span><i class="fab fa-osi"></i> OpenSource</span>                | <span><i class="fas fa-drafting-compass"></i> Solidworks & AutoDesk</span> | <span><i class="fab fa-jira"></i> JIRA</span> | <span><i class="fab fa-google"></i> Google Apps</span> | <span><i class="fab fa-raspberry-pi"></i> Raspberry Pi</span>                | <span><i class="fab fa-java"></i> Java</span>
+                <br><br>
+                <b><i>Physical world</i></b><br>
+                <span><i class="fas fa-tractor"></i> Kubota</span> | <span><i class="fas fa-tools"></i> Dewalt</span> | <span><i class="fas fa-tree"></i> Fiskars</span> | <i class="fas fa-pencil-ruler"></i> Staedtler & Faber-Castell</span>
+                <br><br>
+                <a class="jump" href="#topmenu" title="Jump back to main menu.">↩</a>
+
+
+
+                <h2 id="writing">Selected Writings</h2>
+
+                <div class="tabs">
+                    <button id="button-show-all">All</button>
+                    <button id="geomatics">Geomatics</button>
+                    <button id="language">Language/Linguistics</button>
+                    <button id="resources">Natural Resources/Commodities</button>
+                </div>
+
+                <div class="filterDiv post geomatics linguistics hidden">
+                    <a href="https://gogeomatics.ca/mapping-the-contours-of-human-languages" target="_blank">Mapping the contours of human languages <i class="fas fa-external-link-alt" style="width: 50%;display: inline;"></i></a>
+                    <p>Approaching human language from a geographical perspective can be both practical and fascinating.</p>
+                </div>
+
+                <div class="filterDiv post linguistics communication hidden">
+                    <a href="posts\resources.html" target="_blank">Natural resources and communication: when the rhetorical tradition confronts the real economy</a>
+                    <p>Draft chapter for a forethcoming book.</p>
+                </div>
+
+                <div class="filterDiv post linguistics data hidden">
+                    <a href="posts\gm-discourse.html" target="_blank">Corpus-based analysis of genetically modified seed discourse</a>
+                    <p>This paper uses corpus linguistic analysis to draw out various dimensions of debates related to genetically modified (GM) seed.</p>
+                </div>
+
+                <div class="filterDiv post liguistics communication hidden">
+                    <a href="posts\multilevel.html" target="_blank">Multilevel discourse analysis: a methodological response to the ecological turn in ICC research</a>
+                    <p>Presentation at the 71st Annual International Communication Association Conference.</p>
+                </div>
+
+                <div class="filterDiv post linguistics data hidden">
+                    <a href="https://www.euppublishing.com/doi/abs/10.3366/cor.2019.0177?journalCode=cor" target="_blank">An historical analysis of species references in American English <i class="fas fa-external-link-alt" style="width: 50%;display: inline;"></i></a>
+                    <p>This study uses the two largest available American English language corpora to investigate relations between ecology and language.</p>
+                </div>
+
+                <div class="filterDiv post resources hidden">
+                    <a href="https://miningfeeds.com/despite-production-declines-kinross-tsxk-capital-allocation-strategy-remains-on-track/" target="_blank">Despite production declines, Kinross' capital allocation strategy remains on track <i class="fas fa-external-link-alt" style="width: 50%;display: inline;"></i></a>
+                    <p>Geopolitics and sanctions are near-term headwinds given that Russian operations accounted for 20% of 2021 production. However, 2022 performance is more likely to be driven by their ability to deliver on broader production and capital
+                        strategies.
+                    </p>
+                </div>
+
+                <div class="filterDiv post resources hidden">
+                    <a href="https://miningfeeds.com/fortuna-silver-tsxfvi-positioned-to-navigate-jurisdictional-risks/" target="_blank">Fortuna Silver positioned to navigate jurisdictional risks <i class="fas fa-external-link-alt" style="width: 50%;display: inline;"></i></a>
+                    <p>By establishing itself as a reliable partner with a long-term stakeholder approach, Fortuna Silver Mines Inc. could be positioning itself for the years to come.</p>
+                </div>
+
+                <div class="filterDiv post resources hidden">
+                    <a href="https://miningfeeds.com/b2gold-nysebtg-tsxbto-shows-strong-production-but-mali-risks-persist/" target="_blank">B2Gold shows strong production, but Mali risks persist <i class="fas fa-external-link-alt" style="width: 50%;display: inline;"></i></a>
+                    <p>If perceived Mali risks begin to ease and gold continues to show a strong hand, B2Gold Corp.'s value could start to be better reflected in the price.</p>
+                </div>
+
+                <div class="filterDiv post resources hidden">
+                    <a href="https://miningfeeds.com/market-awaits-news-about-orogens-flagship-royalty-assets/" target="_blank">Market awaits news about Orogen's flagship royalty assets <i class="fas fa-external-link-alt" style="width: 50%;display: inline;"></i></a>
+                    <p>What to expect from Orogen Royalties Inc. in 2022.</p>
+                </div>
+
+                <div class="filterDiv post resources hidden">
+                    <a href="https://miningfeeds.com/a-closer-look-at-arizona-silvers-tsxvazs-epithermal-deposit/" target="_blank">A closer look at Arizona Silver's epithermal deposit <i class="fas fa-external-link-alt" style="width: 50%;display: inline;"></i></a>
+                    <p>Results and outlook for Arizona Silver Exploration's drilling in the Oatman District, AZ.</p>
+                </div>
+
+                <div class="filterDiv post resources hidden">
+                    <a href="https://miningfeeds.com/strategy-behind-gold-royaltys-nysegroy-premium-on-elemental-otcelemf/" target="_blank">Strategy behind Gold Royalty's premium on Elemental <i class="fas fa-external-link-alt" style="width: 50%;display: inline;"></i></a>
+                    <p>Gold Royalty Corp's hostile bid for Elemental Royalties can be viewed in light of David Garofelo's thesis that there will be strong investor appetite for a mid-cap in the space.</p>
+                </div>
+
+
+
+
+
+
+                <a class="jump" href="#topmenu" title="Jump back to main menu.">↩</a>
+    </main>
+
+
+    </style>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [
+                    ['$', '$'],
+                ],
+            },
+        }
+        const toggle = document.getElementById('typeface-toggle')
+        const typeface = document.getElementById('typeface')
+        toggle.addEventListener('click', () => {
+            document.body.classList.toggle('libertinus')
+            typeface.textContent = document.body.classList.contains('libertinus') ? 'Libertinus' : 'Latin Modern'
+        })
+
+        function changeImage() {
+
+            var img = document.getElementById("imgClickAndChange").src;
+
+            if (img.includes("images/person-icon.png")) {
+
+                document.getElementById("imgClickAndChange").src = "images/profile.webp";
+                document.getElementById("imgClickAndChange").style.width = "40%";
+            } else {
+                document.getElementById("imgClickAndChange").src = "images/person-icon.png";
+                document.getElementById("imgClickAndChange").style.width = "10%";
+            }
+        }
+
+        function collapse() {
+            var col = document.getElementById("port-canvas").style.display;
+            console.log(col);
+
+            if (col !== "none") {
+
+                document.getElementById("port-canvas").style.display = "none";
+                document.getElementById("collapse").style.display = "none";
+                document.getElementById("port-head").style.display = "none";
+            }
+
+        }
+
+        function openSlides(icon, link, title) {
+            var http = document.getElementById("slideframe").src = "https://";
+            document.getElementById("port-head").style.display = "block";
+            document.getElementById("collapse").style.display = "block";
+            document.getElementById("port-canvas").style.display = "block";
+            document.getElementById("slideframe").src = http + link;
+            document.getElementById("port-head2").innerHTML = ' ' + title;
+            document.getElementById("port-icon").className = icon;
+
+        }
+
+
+        $('#geomatics').click(function() {
+            $('.post').removeClass('show');
+            $('.post').addClass('hidden');
+            $('.geomatics').removeClass('hidden');
+            $('.geomatics').addClass('show');
+        });
+
+        $('#resources').click(function() {
+            $('.post').removeClass('show');
+            $('.post').addClass('hidden');
+            $('.resources').removeClass('hidden');
+            $('.resources').addClass('show');
+        });
+
+        $('#language').click(function() {
+            $('.post').removeClass('show');
+            $('.post').addClass('hidden');
+            $('.linguistics').removeClass('hidden');
+            $('.linguistics').addClass('show');
+        });
+
+        $('#button-show-all').click(function() {
+            $('.post').removeClass('hidden');
+            $('.post').addClass('show');
+        });
+    </script>
+
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script async src="prism/prism.js"></script>
+    <!-- <script async src="scripts/main.js"></script> -->
+    <!-- <script async defer data-domain="latex.now.sh" src="https://plausible.io/js/plausible.js"></script> -->
 </body>
+
 </html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="google-site-verification" content="tm5Y6ZNTf-lBqbwniGjQPv1q02o2TuUQZ9GTYa4SMLg" />
+  <title>Craig Frayne — Writing</title>
+  <link rel="shortcut icon" type="image/jpg" href="..\images\fedalon_logo.png"/>
+
+
+  <meta name="description"
+    content="A minimal, almost class-less CSS library to write modern websites that look like LaTeX documents." />
+  <meta name="keywords" content="latex.css,css library,class-less css,latex css" />
+  <meta property="og:title" content="LaTeX.css" />
+  <meta property="og:url" content="https://latex.now.sh" />
+  <meta property="og:description"
+    content="A minimal, almost class-less CSS library to write modern websites that look like LaTeX documents." />
+  <meta property="og:type" content="website" />
+
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="../styles/custom.css" />
+  <link rel="stylesheet" href="../prism/prism.css" />
+</head>
+
+<body id="top">
+
+  <div class="topnav">
+    <!-- <img src="images\fedalon_logo.png" width="70px" height="70px"> -->
+    <a class="active" href="../"><img src="..\images\fedalon_logo.png" width="60px" height="60px"></a>    
+</div>   
+
+  <header>
+    <h1>Multilevel Discourse Analysis: A Methodological Response to the Ecological Turn in ICC Research</h1>
+    <h5 style="text-align: center;">Presentation at the 71st Annual International Communication Association Conference.</h5>
+    <p class="author">
+      Craig Frayne <br />
+      April 2021
+    </p>
+
+    
+  </header>
+  <figure>
+    <img src="silent_banner.png"
+      loading="lazy" alt="Leaf with water drops" width="600" height="400" />
+      <figcaption>
+        Image from the cover of Edward T. Hall's
+        <a href="https://www.penguinrandomhouse.com/books/73819/the-silent-language-by-edward-t-hall/" target="_blank">The Silent Language</a>.
+      </figcaption>
+  </figure>
+  <br>
+  
+  <nav role="navigation" class="toc">
+    <ol>
+      <li><a href="#summary">Summary</a></li>
+      <li>
+        <a href="#conclusions">Presentation</a></li>
+    </ol>
+  </nav>
+
+  <p>
+    If you prefer a darker typeface you can change it here:
+  <button id="typeface-toggle">Typeface: <span id="typeface">Latin Modern</span></button> 
+ </p>
+ 
+ <main>
+    <h2 id="summary">Summary</h2>
+    
+    <p>
+      Over several decades, the discipline of intercultural communication (ICC) has spanned microcultural and metalinguistic elements of communication as well as macrocontext of social and economic systems. The ecological turn can be considered a further movement towards the macrocontext. However, a strength of ICC lies in combining this macrocontext with the microcontext of human communication and culture. Critical research engaged with the cognitive sciences is one path to this combination. To begin this task, multilevel discourse analysis is proposed. By distinguishing communication according to levels (ecological, cultural, socio-economic, and cognition) we can gain insights as to the meaning of communication and sources of misunderstandings. The multilevel framework outlined in this paper aims to strike a balance between interpretive and critical approaches. By isolating socio-economic and cultural analyses, the researcher is compelled to take both approaches (interpretive and critical) into account.
+      </p>
+
+      <h2 id="conclusions">Presentation</h2>
+      
+      <iframe width="600" height="315" src="https://www.youtube.com/embed/3aESsS8feEo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  
+  </main>
+
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'],],
+      },
+    }
+    const toggle = document.getElementById('typeface-toggle')
+    const typeface = document.getElementById('typeface')
+    toggle.addEventListener('click', () => {
+      document.body.classList.toggle('libertinus')
+      typeface.textContent = document.body.classList.contains('libertinus') ? 'Libertinus' : 'Latin Modern'
+    })
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script async src="prism/prism.js"></script>
+
+  <script async defer data-domain="latex.now.sh" src="https://plausible.io/js/plausible.js"></script>
+</body>
+
+</html>
